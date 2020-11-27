@@ -55,4 +55,9 @@ public class FizzBuzzTest {
         assertEquals("12", new FizzBuzz().process(1, 2));
     }
 
+    @Test
+    public void shouldReturn12FizzIfNumbersAre1to3() {
+        assertEquals("12Fizz", new FizzBuzz().process(1, 3));
+    }
+
 }
