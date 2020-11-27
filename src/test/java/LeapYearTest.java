@@ -10,4 +10,8 @@ public class LeapYearTest {
         assertEquals(true, new LeapYear().isLeapYear(4));
     }
 
+    @Test void shouldReturnFalseIfYearIs6() {
+        assertEquals(false, new LeapYear().isLeapYear(6));
+    }
+
 }

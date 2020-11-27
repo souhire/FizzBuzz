@@ -3,7 +3,9 @@ package com.souhire.tdd.leapyear;
 public class LeapYear {
 
     public boolean isLeapYear(int year) {
-        return true;
+        if (year == 4)
+            return true;
+        return false;
     }
 
 }
