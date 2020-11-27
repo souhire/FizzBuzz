@@ -22,4 +22,16 @@ public class LeapYearTest {
         assertEquals(false, new LeapYear().isLeapYear(1900));
     }
 
+    @Test void shouldReturnTrueIfYearIs2000() {
+        assertEquals(true, new LeapYear().isLeapYear(2000));
+    }
+
+    @Test void shouldReturnTrueIfYearIs1996() {
+        assertEquals(true, new LeapYear().isLeapYear(1996));
+    }
+
+    @Test void shouldReturnFalseIfYearIs2001() {
+        assertEquals(false, new LeapYear().isLeapYear(2001));
+    }
+
 }
