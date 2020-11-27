@@ -7,7 +7,7 @@ public class FizzBuzzTest {
 
     @Test
     public void shouldReturn1IfNumberIs1() {
-        assertEquals("1", new FizzBuzz().process());
+        assertEquals("1", new FizzBuzz().process(1));
     }
 
 }
