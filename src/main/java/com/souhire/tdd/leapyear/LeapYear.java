@@ -3,13 +3,14 @@ package com.souhire.tdd.leapyear;
 public class LeapYear {
 
     public boolean isLeapYear(int year) {
-        if (year % 400 == 0)
-            return true;
-        if (year % 100 == 0)
-            return false;
-        if (year % 4 == 0)
+        if ((isDivisible(year, 4) && !isDivisible(year, 100)) ||
+                isDivisible(year, 400))
             return true;
         return false;
+    }
+
+    private boolean isDivisible(int year, int denominateur) {
+        return year % denominateur == 0;
     }
 
 }
