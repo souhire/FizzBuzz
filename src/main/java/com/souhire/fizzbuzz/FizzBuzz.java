@@ -3,9 +3,13 @@ package com.souhire.fizzbuzz;
 public class FizzBuzz {
 
     public String process(int from, int to) {
+        String result = "";
         if (from == to)
-            return transform(from);
-        return transform(from) + transform(to);
+            result = transform(from);
+        if (from < to) {
+            result += transform(from) + process(++from, to);
+        }
+        return result;
     }
 
     private String transform(int number) {
