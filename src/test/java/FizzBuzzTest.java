@@ -1,4 +1,4 @@
-import com.souhire.fizzbuzz.FizzBuzz;
+import com.souhire.tdd.fizzbuzz.FizzBuzz;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

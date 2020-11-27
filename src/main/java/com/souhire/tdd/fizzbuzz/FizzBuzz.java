@@ -1,4 +1,4 @@
-package com.souhire.fizzbuzz;
+package com.souhire.tdd.fizzbuzz;
 
 public class FizzBuzz {
 
