@@ -15,4 +15,9 @@ public class LeapYearTest {
         assertEquals(false, new LeapYear().isLeapYear(2001));
     }
 
+    @Test
+    public void shouldReturnFalseIfYearIs1900() {
+        assertEquals(false, new LeapYear().isLeapYear(1900));
+    }
+
 }
