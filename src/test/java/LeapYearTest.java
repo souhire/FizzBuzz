@@ -6,18 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class LeapYearTest {
 
     @Test
-    public void shouldReturnTrueIfYearIs1996() {
-        assertEquals(true, new LeapYear().isLeapYear(1996));
-    }
-
-    @Test
-    public void shouldReturnFalseIfYearIs2001() {
-        assertEquals(false, new LeapYear().isLeapYear(2001));
-    }
-
-    @Test
-    public void shouldReturnFalseIfYearIs1900() {
-        assertEquals(false, new LeapYear().isLeapYear(1900));
+    public void shouldReturnTrueIfYearIs4() {
+        assertEquals(true, new LeapYear().isLeapYear(4));
     }
 
 }
