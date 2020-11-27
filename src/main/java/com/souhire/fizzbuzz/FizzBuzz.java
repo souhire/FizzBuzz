@@ -2,13 +2,13 @@ package com.souhire.fizzbuzz;
 
 public class FizzBuzz {
 
-    public String process(int number) {
-        if (number % 15 == 0)
+    public String process(int from, int to) {
+        if (to % 15 == 0)
             return "FizzBuzz";
-        if (number % 3 == 0)
+        if (to % 3 == 0)
             return "Fizz";
-        if (number % 5 == 0)
+        if (to % 5 == 0)
             return "Buzz";
-        return String.valueOf(number);
+        return String.valueOf(to);
     }
 }
