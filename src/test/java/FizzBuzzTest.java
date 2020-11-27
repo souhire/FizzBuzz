@@ -35,4 +35,9 @@ public class FizzBuzzTest {
         assertEquals("Buzz", new FizzBuzz().process(5));
     }
 
+    @Test
+    public void shouldReturnBuzzIfNumberIs10() {
+        assertEquals("Buzz", new FizzBuzz().process(10));
+    }
+
 }
