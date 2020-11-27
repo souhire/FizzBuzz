@@ -60,4 +60,14 @@ public class FizzBuzzTest {
         assertEquals("12Fizz", new FizzBuzz().process(1, 3));
     }
 
+    @Test
+    public void shouldReturn12Fizz4BuzzIfNumbersAre1to5() {
+        assertEquals("12Fizz4Buzz", new FizzBuzz().process(1, 5));
+    }
+
+    @Test
+    public void shouldReturn12Fizz4BuzzFizz78FizzBuzz11Fizz1314FizzBuzzIf1to15() {
+        assertEquals("12Fizz4BuzzFizz78FizzBuzz11Fizz1314FizzBuzz", new FizzBuzz().process(1, 15));
+    }
+
 }
