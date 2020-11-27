@@ -14,4 +14,8 @@ public class LeapYearTest {
         assertEquals(false, new LeapYear().isLeapYear(6));
     }
 
+    @Test void shouldReturnTrueIfYearIs8() {
+        assertEquals(true, new LeapYear().isLeapYear(8));
+    }
+
 }
