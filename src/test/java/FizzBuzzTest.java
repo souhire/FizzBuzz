@@ -10,4 +10,9 @@ public class FizzBuzzTest {
         assertEquals("1", new FizzBuzz().process(1));
     }
 
+    @Test
+    public void shouldReturn2IfNumberIs2() {
+        assertEquals("2", new FizzBuzz().process(2));
+    }
+
 }
