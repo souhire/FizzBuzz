@@ -52,7 +52,7 @@ public class FizzBuzzTest {
 
     @Test
     public void shouldReturn12IfNumbersAre1And2() {
-        assertEquals("FizzBuzz", new FizzBuzz().process(1, 2));
+        assertEquals("12", new FizzBuzz().process(1, 2));
     }
 
 }
