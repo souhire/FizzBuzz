@@ -15,4 +15,9 @@ public class FizzBuzzTest {
         assertEquals("2", new FizzBuzz().process(2));
     }
 
+    @Test
+    public void shouldReturn4IfNumberIs4() {
+        assertEquals("4", new FizzBuzz().process(4));
+    }
+
 }
