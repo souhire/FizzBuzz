@@ -20,4 +20,9 @@ public class FizzBuzzTest {
         assertEquals("4", new FizzBuzz().process(4));
     }
 
+    @Test
+    public void shouldReturnFizzIfNumberIs3() {
+        assertEquals("Fizz", new FizzBuzz().process(3));
+    }
+
 }
