@@ -9,6 +9,6 @@ public class StatsCalculator {
     }
 
     public int calculateMaximalValue(int[] numbers) {
-        return 92;
+        return Arrays.stream(numbers).max().orElse(0);
     }
 }
