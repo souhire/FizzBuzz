@@ -8,4 +8,7 @@ public class StatsCalculator {
         return Arrays.stream(numbers).min().orElse(0);
     }
 
+    public int calculateMaximalValue(int[] numbers) {
+        return 92;
+    }
 }

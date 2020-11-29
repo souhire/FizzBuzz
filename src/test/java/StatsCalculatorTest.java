@@ -31,4 +31,10 @@ public class StatsCalculatorTest {
         return new StatsCalculator().calculateMinimalValue(numbers);
     }
 
+    @Test void shouldReturn92IfMaximalValueIs92() {
+        int maximalValue = new StatsCalculator().calculateMaximalValue(numbers);
+
+        assertEquals(92, maximalValue);
+    }
+
 }
