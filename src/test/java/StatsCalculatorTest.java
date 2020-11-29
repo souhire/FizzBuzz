@@ -1,26 +1,34 @@
 import com.souhire.tdd2.statsCalculator.StatsCalculator;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StatsCalculatorTest {
 
-    @Test void shouldReturnMinus2IfMinimalValueIsMinus2() {
+    private int [] numbers;
+
+    @BeforeEach
+    private void setUp() {
         //Arrange
-        int [] numbers = {6, 9, 15, -2, 92, 11};
-        //Act
-        int minimalValue = new StatsCalculator().calculateMinimalValue(numbers);
+        numbers = new int[]{6, 9, 15, -2, 92, 11};
+    }
+
+    @Test void shouldReturnMinus2IfMinimalValueIsMinus2() {
         //Assert
-        assertEquals(-2, minimalValue);
+        assertEquals(-2, getMinimalValue(-2));
     }
 
     @Test void shouldReturnZeroIfMinimalValueIsZero() {
-        //Arrange
-        int [] numbers = {6, 9, 15, 0, 92, 11};
-        //Act
-        int minimalValue = new StatsCalculator().calculateMinimalValue(numbers);
         //Assert
-        assertEquals(0, minimalValue);
+        assertEquals(0, getMinimalValue(0));
+    }
+
+    private int getMinimalValue(int i) {
+        //Arrange
+        numbers[3] = i;
+        //Act
+        return new StatsCalculator().calculateMinimalValue(numbers);
     }
 
 }
