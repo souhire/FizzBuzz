@@ -2,6 +2,8 @@ import com.souhire.tdd2.statsCalculator.StatsCalculator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StatsCalculatorTest {
@@ -30,6 +32,24 @@ public class StatsCalculatorTest {
 
     @Test void shouldReturn100IfMaximalValueIs100() {
         assertEquals(100, getMaximalValue(100));
+    }
+
+    @Test void shouldReturn6IfNumbersContains6elements() {
+        assertEquals(6, new StatsCalculator().calculateNumbersOfElements(numbers));
+    }
+
+    @Test void shouldReturn7IfNumbersContains7elements() {
+        assertEquals(7, new StatsCalculator()
+                .calculateNumbersOfElements(Arrays.copyOf(numbers, 7)));
+    }
+
+    @Test void shouldReturn21Dot833333AverageValue() {
+        assertEquals(21.833333, new StatsCalculator().calculateAverageValue(numbers));
+    }
+
+    @Test void shouldReturn21Dot166666AverageValue() {
+        numbers[3] = 0;
+        assertEquals(22.166666, new StatsCalculator().calculateAverageValue(numbers));
     }
 
     private int getMinimalValue(int i) {
